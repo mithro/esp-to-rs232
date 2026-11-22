@@ -17,8 +17,9 @@ protocol of its own.
   sockets that accept the port's pins. It carries no DE-9 connector itself.
 * Powered only by rectifying the port's output pins. Estimate: each output
   supplies 5–10 mA at ±12 V, so about 12 V × 10 mA ≈ 120 mW, or roughly
-  40 mA at 3 V. **This estimate is not yet verified**; modern ports use
-  charge-pump drivers with lower voltages.
+  40 mA at 3 V. **Research says this holds only for legacy ±12 V ports.** A
+  modern 3.3 V charge-pump port gives about 20–50 mW after regulation,
+  roughly 6–15 mA at 3.3 V. See [research/port-power.md](research/port-power.md).
 * Very small circuit.
 * Transmit and receive. 9600 baud is the target; 115200 is nice to have.
 * RX and TX directions can be swapped.

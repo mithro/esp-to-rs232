@@ -37,6 +37,8 @@ layout.
 
 * [docs/design-notes.md](docs/design-notes.md): requirements and the
   decisions made so far, with open questions.
+* [docs/research/port-power.md](docs/research/port-power.md): how much
+  power a COM port can supply.
 * [docs/research/wifi-mcu-current.md](docs/research/wifi-mcu-current.md):
   what the candidate Wi-Fi chips draw.
 * [docs/research/prior-art.md](docs/research/prior-art.md): existing
