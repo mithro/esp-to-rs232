@@ -20,6 +20,11 @@ protocol of its own.
   40 mA at 3 V. **Research says this holds only for legacy ±12 V ports.** A
   modern 3.3 V charge-pump port gives about 20–50 mW after regulation,
   roughly 6–15 mA at 3.3 V. See [research/port-power.md](research/port-power.md).
+* **Power target (decided 2026-11-23): 30 mW average draw.** The target
+  machines are mostly older servers and x86 motherboards from about
+  2015–2020, which use charge-pump transceivers.
+* Extra power from a USB port is an absolute last resort. Choosing a
+  different Wi-Fi chip and firmware is preferred over that.
 * Very small circuit.
 * Transmit and receive. 9600 baud is the target; 115200 is nice to have.
 * RX and TX directions can be swapped.

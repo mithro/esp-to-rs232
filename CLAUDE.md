@@ -18,8 +18,10 @@ layout, script style and conventions unless there is a reason not to.
 
 ## Project rules
 
-- **Power comes only from the port.** No external supply, no battery. Every
-  design choice is checked against the power budget in `docs/`.
+- **Power comes only from the port.** No external supply, no battery. The
+  target is **30 mW average draw**. Every design choice is checked against
+  the power budget in `docs/`. USB power is an absolute last resort; a
+  different Wi-Fi chip and firmware is preferred over it.
 - **9600 baud is the required target; 115200 is a stretch goal.**
 - **Tasmota is preferred.** Use an ESP32-family or ESP8266 chip if the power
   budget allows. Other chips or firmware need the user's agreement.
